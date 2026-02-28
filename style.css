@@ -421,7 +421,8 @@ h1, h2, h3 {
 .project-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(245, 230, 216, 0.92); /* Beige overlay */
+  background: fixed;
+  background-color: #ddb1b1;
   color: var(--primary);
   display: flex;
   flex-direction: column;
@@ -453,9 +454,77 @@ h1, h2, h3 {
 }
 
 /* CONTACT */
+/* CONTACT SECTION */
 .contact {
-    padding: 100px 60px;
-    text-align: center;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form button {
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--accent);
+}
+
+/* Social Links */
+.contact-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contact-links a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 0 15px;
+  }
 }
 
 /* FOOTER */
